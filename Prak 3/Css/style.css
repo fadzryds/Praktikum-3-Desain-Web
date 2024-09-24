@@ -1,0 +1,202 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+  height: 20vh; /* Use viewport height for responsive design */
+  background-image: url('https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/300823434_579933423823333_768369606856530781_n.jpg?stp=dst-jpg_s960x960&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=coYjHX5kJ_IQ7kNvgGECcZV&_nc_ht=scontent-iad3-2.xx&_nc_gid=AvmCFCqcYIO7i8XPPgmf2K3&oh=00_AYB317qQYYvTfy7Uqrq2Jltlg8GNGyJC-QqRlEkM2gmoPQ&oe=66F88DAE'); /* Add your background image */
+  background-size: cover; /* Ensure the background covers the whole area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255); /* Make the text stand out over the background */
+  text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #34c8db;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Informasi Item */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item h4 {
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.item p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Button Styling - Center Alignment */
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Menyelaraskan tombol dan konten item ke tengah */
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item h4 {
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.item p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px; /* Tambahan margin bawah untuk memberi jarak dengan tombol */
+}
+
+/* Button Styling */
+.item button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Menambahkan space di atas tombol */
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Agar tombol tidak memenuhi lebar item */
+}
+
+.item button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
